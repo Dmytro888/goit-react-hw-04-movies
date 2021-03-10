@@ -2,7 +2,7 @@
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Dmytro888.github.io/goit-react-hw-01-components",
+  "homepage": "https://Dmytro888.github.io/goit-react-hw-04-movies",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/styles": "^4.11.3",

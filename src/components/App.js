@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Loader from 'react-loader-spinner';
 import NotFoundPage from '../pages/NotFoundPage';
 import routes from '../routes';
+import styles from './App.module.css';
 
 const HomePage = lazy(() =>
   import('../pages/HomePage' /* webpackChunkName: "home-page" */),
@@ -19,7 +20,15 @@ const App = () => (
   <>
     <NavBar />
     <Suspense
-      fallback={<Loader type='Oval' color='#3f51b5' height={280} width={280} />}
+      fallback={
+        <Loader
+          className={styles.Loader}
+          type='Oval'
+          color='#3f51b5'
+          height={280}
+          width={280}
+        />
+      }
     >
       <Switch>
         <Route exact path={routes.home} component={HomePage} />

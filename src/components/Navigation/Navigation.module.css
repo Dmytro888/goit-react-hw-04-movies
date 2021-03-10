@@ -1,0 +1,23 @@
+.listContainer {
+  display: flex;
+
+  gap: 25px;
+}
+
+.link {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: #000000 1px 1px 0;
+}
+
+.base {
+  composes: link;
+  color: rgb(61, 55, 55);
+}
+
+.active {
+  composes: link;
+
+  color: rgb(248, 238, 238);
+}

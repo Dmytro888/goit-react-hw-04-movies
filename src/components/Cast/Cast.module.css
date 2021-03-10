@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.actors {
+  width: 200px;
+  min-height: 350px;
+  background-color: azure;
+  border-radius: 10px;
+}
+
+.img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.text {
+  font-weight: bold;
+}

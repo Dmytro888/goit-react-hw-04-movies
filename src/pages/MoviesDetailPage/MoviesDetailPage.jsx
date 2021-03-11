@@ -39,6 +39,8 @@ class MoviesDetailPage extends Component {
   };
 
   render () {
+    const { location } = this.props;
+
     const { cast, reviews, movieDetails } = this.state;
     const { url, path } = this.props.match;
 
@@ -53,10 +55,20 @@ class MoviesDetailPage extends Component {
           Go Back
         </button>
         <h3>Additional Information:</h3>
-        <NavLink to={`${url}/cast`}>
+        <NavLink
+          to={{
+            pathname: `${url}/cast`,
+            state: { from: location.state.from },
+          }}
+        >
           <button className={styles.linkButton}>Cast</button>{' '}
         </NavLink>
-        <NavLink to={`${url}/reviews`}>
+        <NavLink
+          to={{
+            pathname: `${url}/reviews`,
+            state: { from: location.state.from },
+          }}
+        >
           <button className={styles.linkButton}>Reviews</button>{' '}
         </NavLink>
         <Switch>
